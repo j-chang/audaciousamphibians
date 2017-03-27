@@ -4,11 +4,11 @@
   "description": "roadtrip travel planning app for greenfield project hr73",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server/index.js",
+    "start": "node server/index.js",
     "build": "./node_modules/.bin/webpack",
     "dev-client": "./node_modules/.bin/webpack-dev-server --open",
     "dev": "npm run build && npm start",
-    "postinstall": "npm run build"
+    "postinstall": "npm start && npm run build"
   },
   "repository": {
     "type": "git",
